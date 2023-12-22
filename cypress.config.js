@@ -1,11 +1,13 @@
-const { defineConfig } = require ("cypress")
+const { defineConfig } = require ("cypress");
 
 module.exports = defineConfig({
+    "baseUrl": "https://practicetestautomation.com/practice-test-login/",
+    "experimentalModuleVariables": true,
+    "supportFile": "cypress/support/index.js",
     e2e:{
         setupNodeEvents(on, config){
 
         },
-        //baseUrl:'https://wikipedia.org',
         //viewportHeight: 550,
         //viesportWidth: 650
         experimentalStudio: true
